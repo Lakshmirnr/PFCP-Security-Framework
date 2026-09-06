@@ -3,7 +3,7 @@
 Research artifact for the experimental study of **PFCP/N4 security in 5G Core Networks**. The repository organizes four PFCP attack scenarios and a customized **Network Data Analytics Function (NWDAF)** detection framework.
 
 
-## Attacks investigated
+## Attacks Discovered
 
 | Attack | Security effect | Detection focus |
 |---|---|---|
