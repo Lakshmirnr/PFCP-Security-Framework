@@ -52,7 +52,7 @@ pfcp-nwdaf-security/
 
 ## Testbed
 
-The documented experimental platform uses Ubuntu 22.04, Open5GS 2.7.1, UERANSIM, and an isolated multi-VM 5G Core topology. See [`docs/testbed-setup.md`](docs/testbed-setup.md).
+The documented experimental platform uses Ubuntu 22.04, Open5GS 2.7.1, UERANSIM, and an isolated multi-VM 5G Core topology. See https://github.com/Lakshmirnr/PFCP-Security-Framework/blob/main/PFCP_repo/docs/testbed-setup.md.
 
 ## Detection prototype
 
