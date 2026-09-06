@@ -1,4 +1,0 @@
-scapy>=2.5.0
-numpy>=1.24.0
-pandas>=2.0.0
-# TODO: add any other packages your attack/detection scripts import
