@@ -198,12 +198,3 @@ The implementation is designed around the 3GPP NWDAF architecture and PFCP opera
 
 The custom Analytics ID extends the NWDAF analytics framework to support PFCP-specific security analysis.
 
-## Research and Reproducibility
-
-This module supports reproducible experimentation with PFCP security analytics in an Open5GS-based 5G Core.
-
-The implementation can be extended with additional PFCP features, machine-learning models, security policies, and automated enforcement mechanisms.
-
-## License
-
-Add the license applicable to the repository here.
