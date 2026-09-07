@@ -5,6 +5,7 @@ Research artifact for the experimental study of **PFCP/N4 security in 5G Core Ne
 
 ## Attacks Discovered
 
+
 | Attack | Security effect | Detection focus |
 |---|---|---|
 | PFCP Session Flooding | Control-plane overload and session setup failures | Per-SEID message rate and malformed-packet thresholds |
@@ -25,33 +26,34 @@ The implemented detection logic covers:
 - fragment ordering, offsets, MF flags, timing and reassembly anomalies;
 - FAR/TFT consistency during fragmented-message processing; and
 - unexpected SEID–TEID relationships and repeated/abnormal session deletion activity.
-```text
+
 ## Repository layout
+
+```text
 pfcp-nwdaf-security/
 ├── attacks/
+│   ├── pfcp-session-flooding/
 │   ├── pfcp-coordinated-fragmentation/
 │   ├── pfcp-delayed-fragmentation/
-│   ├── pfcp-session-flooding/
 │   └── pfcp-session-hijacking/
-├── configs/
-│   └── testbed-setup.md
-├── nwdaf_based_detection/
+├── nwdaf-detection/
 │   ├── detector.py
-│   ├── integration_analyticsid.py
-│   ├── pfcp_parser.py
-│   └── README.md
-├── pfcp_dataset/
-│   ├── coordinated_fragmentation_attack
-│   ├── delayed_fragmentation_attack
-│   ├── pfcp_session_hijacking_teid_imsi
-│   └── pfcp_session_modification_flooding
+│   └── pfcp_parser.py
+├── configs/
+├── datasets/
+├── experiments/
+├── figures/
+├── docs/
+│   └── testbed-setup.md
 ├── requirements.txt
+├── CITATION.cff
 ├── LICENSE
 └── README.md
 ```
+
 ## Testbed
 
-The documented experimental platform uses Ubuntu 22.04, Open5GS 2.7.1, UERANSIM, and an isolated multi-VM 5G Core topology. See https://github.com/Lakshmirnr/PFCP-Security-Framework/blob/main/PFCP_repo/docs/testbed-setup.md.
+The documented experimental platform uses Ubuntu 22.04, Open5GS 2.7.1, UERANSIM, and an isolated multi-VM 5G Core topology. See [`docs/testbed-setup.md`](docs/testbed-setup.md).
 
 ## Detection prototype
 
@@ -81,6 +83,8 @@ A representative alert contains the event type, timestamp, SEID, anomaly count a
 
 ## Responsible disclosure references
 
-- [Open5GS issue #3497](https://github.com/open5gs/open5gs/issues/3497) — PFCP flooding / [CVE-2024-51179](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-51179)
-- [Open5GS issue #3689](https://github.com/open5gs/open5gs/issues/3689) — PFCP fragmentation (Coordinated & Delayed fragmentation Attacks)
-- [Open5GS issue #3693](https://github.com/open5gs/open5gs/issues/3693) — PFCP session hijacking
+- Open5GS issue #3497 — PFCP flooding / CVE-2024-51179
+- Open5GS issue #3689 — PFCP fragmentation
+- Open5GS issue #3693 — PFCP session hijacking
+
+

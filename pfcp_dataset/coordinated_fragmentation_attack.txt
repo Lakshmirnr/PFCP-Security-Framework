@@ -1,0 +1,70 @@
+Coordinated Fragmentation Attack on PFCP Messages
+
+
+Spoofed source A
+----------------
+
+Frame 2210: 1480 bytes on wire (11840 bits), 1480 bytes captured
+    Arrival Time: 2026-09-07 10:18:11.214603
+Internet Protocol Version 4
+    Src: 10.10.0.51
+    Dst: 10.10.0.12
+    Identification: 0x4A21
+    Flags: 0x1, More Fragments
+    Fragment Offset: 0
+    Total Length: 1480
+User Datagram Protocol / PFCP payload
+    UDP Port: 8805
+    PFCP Message: Session Modification Request (52)
+    SEID: 0x0000000000023456
+    Sequence Number: 0x0005C1
+
+Frame 2211: 1480 bytes on wire (11840 bits), 1480 bytes captured
+    Time since previous frame: 0.000287 s
+Internet Protocol Version 4
+    Src: 10.10.0.51
+    Dst: 10.10.0.12
+    Identification: 0x4A21
+    Flags: 0x1, More Fragments
+    Fragment Offset: 185
+
+Frame 2212: 436 bytes on wire (3488 bits), 436 bytes captured
+    Time since previous frame: 0.000301 s
+Internet Protocol Version 4
+    Src: 10.10.0.51
+    Dst: 10.10.0.12
+    Identification: 0x4A21
+    Flags: 0x0
+    Fragment Offset: 370
+
+
+Spoofed source B
+----------------
+
+Frame 2213: 1480 bytes on wire (11840 bits), 1480 bytes captured
+    Time since previous frame: 0.001842 s
+Internet Protocol Version 4
+    Src: 10.10.0.52
+    Dst: 10.10.0.12
+    Identification: 0x5B34
+    Flags: 0x1, More Fragments
+    Fragment Offset: 0
+
+Frame 2214: 1480 bytes on wire (11840 bits), 1480 bytes captured
+    Time since previous frame: 0.000266 s
+Internet Protocol Version 4
+    Src: 10.10.0.52
+    Dst: 10.10.0.12
+    Identification: 0x5B34
+    Flags: 0x1, More Fragments
+    Fragment Offset: 185
+
+Frame 2215: 436 bytes on wire (3488 bits), 436 bytes captured
+    Time since previous frame: 0.000293 s
+Internet Protocol Version 4
+    Src: 10.10.0.52
+    Dst: 10.10.0.12
+    Identification: 0x5B34
+    Flags: 0x0
+    Fragment Offset: 370
+

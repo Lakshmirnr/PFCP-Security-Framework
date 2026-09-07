@@ -1,0 +1,47 @@
+Delayed Fragmentation Attack
+
+Frame 3051: 1480 bytes on wire (11840 bits), 1480 bytes captured
+    Arrival Time: 2026-09-07 10:22:47.615204
+Internet Protocol Version 4
+    Src: 10.10.0.53
+    Dst: 10.10.0.12
+    Identification: 0x6C42
+    Flags: 0x1, More Fragments
+    Fragment Offset: 0
+User Datagram Protocol / PFCP payload
+    UDP Port: 8805
+    PFCP Message: Session Modification Request (52)
+    SEID: 0x0000000000037890
+    Sequence Number: 0x0006D2
+
+
+Frame 3052: 1480 bytes on wire (11840 bits), 1480 bytes captured
+    Time since previous frame: 0.850000 s
+    Arrival Time: 2026-09-07 10:22:48.465204
+Internet Protocol Version 4
+    Src: 10.10.0.53
+    Dst: 10.10.0.12
+    Identification: 0x6C42
+    Flags: 0x1, More Fragments
+    Fragment Offset: 185
+
+
+Frame 3053: 436 bytes on wire (3488 bits), 436 bytes captured
+    Time since previous frame: 1.200000 s
+    Arrival Time: 2026-09-07 10:22:49.665204
+Internet Protocol Version 4
+    Src: 10.10.0.53
+    Dst: 10.10.0.12
+    Identification: 0x6C42
+    Flags: 0x0
+    Fragment Offset: 370
+
+
+Comparison with normal transmission
+-----------------------------------
+
+Normal fragment spacing:
+    Frame 3051 -> Frame 3052: 0.850 s
+    Frame 3052 -> Frame 3053: 1.200 s
+
+

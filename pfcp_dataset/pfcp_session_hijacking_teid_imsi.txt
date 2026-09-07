@@ -1,0 +1,71 @@
+PFCP Session Hijacking via TEID and IMSI Manipulation
+
+
+Legitimate PFCP Session Modification Request
+--------------------------------------------
+
+Frame 4017: 142 bytes on wire (1136 bits), 142 bytes captured
+    Arrival Time: 2026-09-07 10:27:18.192741
+Internet Protocol Version 4
+    Src: 10.10.0.11
+    Dst: 10.10.0.12
+User Datagram Protocol
+    Src Port: 8805
+    Dst Port: 8805
+PFCP
+    Version: 1
+    Message Type: Session Modification Request (52)
+    SEID: 0x00000000000491F4
+    Sequence Number: 0x0007A1
+    Information Elements
+        F-TEID
+            TEID: 0x4A7C92D1
+        IMSI
+            IMSI: 404450123456789
+        Update PDR
+            PDR ID: 1
+        Update FAR
+            FAR ID: 1
+
+
+Forged PFCP Session Modification Request
+----------------------------------------
+
+Frame 4018: 142 bytes on wire (1136 bits), 142 bytes captured
+    Time since previous frame: 0.002614 s
+    Arrival Time: 2026-09-07 10:27:18.195355
+Internet Protocol Version 4
+    Src: 10.10.0.50
+    Dst: 10.10.0.12
+User Datagram Protocol
+    Src Port: 8805
+    Dst Port: 8805
+PFCP
+    Version: 1
+    Message Type: Session Modification Request (52)
+    SEID: 0x00000000000491F4
+    Sequence Number: 0x0007A2
+    Information Elements
+        F-TEID
+            TEID: 0x9B31E7A4       <-- MODIFIED
+        IMSI
+            IMSI: 404450987654321  <-- MODIFIED
+        Update PDR
+            PDR ID: 1
+        Update FAR
+            FAR ID: 1
+
+
+Field-level comparison
+----------------------
+
+Field                    Legitimate              Forged
+---------------------------------------------------------------
+Source IP                10.10.0.11              10.10.0.50
+SEID                     0x00000000000491F4      0x00000000000491F4
+Sequence Number          0x0007A1                0x0007A2
+TEID                     0x4A7C92D1              0x9B31E7A4
+IMSI                     404450123456789         404450987654321
+Message Type             Session Modification    Session Modification
+
+
