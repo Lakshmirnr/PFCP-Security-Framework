@@ -25,7 +25,7 @@ The implemented detection logic covers:
 - fragment ordering, offsets, MF flags, timing and reassembly anomalies;
 - FAR/TFT consistency during fragmented-message processing; and
 - unexpected SEID–TEID relationships and repeated/abnormal session deletion activity.
-
+```text
 ## Repository layout
 pfcp-nwdaf-security/
 ├── attacks/
@@ -48,7 +48,7 @@ pfcp-nwdaf-security/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-
+```
 ## Testbed
 
 The documented experimental platform uses Ubuntu 22.04, Open5GS 2.7.1, UERANSIM, and an isolated multi-VM 5G Core topology. See https://github.com/Lakshmirnr/PFCP-Security-Framework/blob/main/PFCP_repo/docs/testbed-setup.md.
