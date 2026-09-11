@@ -85,7 +85,7 @@ A representative alert contains the event type, timestamp, SEID, anomaly count a
 
 ## Responsible disclosure references
 
-* [Open5GS issue #3497](https://github.com/open5gs/open5gs/issues/3497) — PFCP flooding / [CVE Record: CVE-2024-51179](https://www.cve.org/CVERecord?id=CVE-2024-51179)
+* [Open5GS issue #3497](https://github.com/open5gs/open5gs/issues/3497)// [CVE Record: CVE-2024-51179](https://www.cve.org/CVERecord?id=CVE-2024-51179 — PFCP flooding 
 
 * [Open5GS issue #3689](https://github.com/open5gs/open5gs/issues/3689) — PFCP fragmentation (Coordinated & Delayed Fragmentation Attacks)
 * [Open5GS issue #3693](https://github.com/open5gs/open5gs/issues/3693) — PFCP session hijacking
