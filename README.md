@@ -83,7 +83,7 @@ A representative alert contains the event type, timestamp, SEID, anomaly count a
 }
 ```
 
-## Responsible disclosure references
+## Responsible Disclosure references
 
 * [Open5GS issue #3497](https://github.com/open5gs/open5gs/issues/3497)/ [CVE-2024-51179](https://www.cve.org/CVERecord?id=CVE-2024-51179) — PFCP flooding 
 
