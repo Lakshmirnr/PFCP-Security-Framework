@@ -19,6 +19,21 @@ User Datagram Protocol / PFCP payload
     SEID: 0x0000000000023456
     Sequence Number: 0x0005C1
 
+Source IP	10.10.0.53	IPv4 encoding
+Destination IP	10.10.0.12	IPv4 encoding
+UDP Source Port	8805	0001000100110101
+UDP Destination Port	8805	0001000100110101
+PFCP Version	1	Version field
+Message Type	Session Modification Request	Type field
+SEID	0x000000000001A73C	64-bit field
+Sequence Number	0x0004B2	24-bit field
+PDR ID	1	00000001
+Precedence	100	01100100
+FAR ID	1	00000001
+Apply Action	FORW	PFCP bit-field
+Destination Interface	Core	Enumerated IE value
+URR ID	1	00000001
+
 Frame 2211: 1480 bytes on wire (11840 bits), 1480 bytes captured
     Time since previous frame: 0.000287 s
 Internet Protocol Version 4
